@@ -1,0 +1,96 @@
+<user>
+	<username></username>
+	<name></name>
+	<password></password>
+	<mask></mask>
+	<userfiles>
+		<id></id>
+		<filetype></filetype>
+		<filename></filename>
+		<directory></directory>
+		<lastmodification></lastmodification>
+		<permcreator></permcreator>
+		<permusers></permusers>
+		<creator></creator>
+		<filelist>
+			<mdfile>
+				<id></id>
+				<filetype></filetype>
+				<filename></filename>
+				<directory></directory>
+				<lastmodification></lastmodification>
+				<permcreator></permcreator>
+				<permusers></permusers>
+				<creator></creator>
+			</mdfile>
+			<mdfile>
+				<id></id>
+				<filetype></filetype>
+				<filename></filename>
+				<directory></directory>
+				<lastmodification></lastmodification>
+				<permcreator></permcreator>
+				<permusers></permusers>
+				<creator></creator>
+			</mdfile>
+		</filelist>
+	</userfiles>
+</user>
+<user>
+	<username></username>
+	<password></password>
+	<name></name>
+	<mask></mask>
+	<userfiles>
+		<id></id>
+		<filetype></filetype>
+		<filename></filename>
+		<directory></directory>
+		<lastmodification></lastmodification>
+		<permcreator></permcreator>
+		<permusers></permusers>
+		<creator></creator>
+		<filelist>
+			<mdfile>
+				<id></id>
+				<filetype></filetype>
+				<filename></filename>
+				<directory></directory>
+				<lastmodification></lastmodification>
+				<permcreator></permcreator>
+				<permusers></permusers>
+				<creator></creator>
+			</mdfile>
+			<mdfile>
+				<id></id>
+				<filetype></filetype>
+				<filename></filename>
+				<directory></directory>
+				<lastmodification></lastmodification>
+				<permcreator></permcreator>
+				<permusers></permusers>
+				<creator></creator>
+			</mdfile>
+		</filelist>
+	</userfiles>
+</user>
+<mdfile>
+	<id></id>
+	<filetype></filetype>
+	<filename></filename>
+	<directory></directory>
+	<lastmodification></lastmodification>
+	<permcreator></permcreator>
+	<permusers></permusers>
+	<creator></creator>
+</mdfile>
+<mdfile>
+	<id></id>
+	<filetype></filetype>
+	<filename></filename>
+	<directory></directory>
+	<lastmodification></lastmodification>
+	<permcreator></permcreator>
+	<permusers></permusers>
+	<creator></creator>
+</mdfile>

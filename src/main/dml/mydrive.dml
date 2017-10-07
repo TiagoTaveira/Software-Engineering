@@ -1,0 +1,126 @@
+package pt.tecnico.mydrive.domain;
+
+class MyDrive {
+	int nextFID;
+}
+
+class Session {
+	DateTime expireDate;
+	Boolean isValid;
+	String token;	
+}
+
+class EnvVar {
+	String name;
+	String value;
+}
+
+class User {
+	String username;
+	String password;
+	String name;
+	String mask;
+}
+
+class MDFile {
+	int id;
+	String filename;
+	String path;
+	DateTime lastModification;
+	String permCreator;
+	String permUsers;
+}
+
+class PlainFile extends MDFile{
+	String content;
+}
+
+class Dir extends MDFile{
+}
+
+class Link extends PlainFile{
+}
+
+class App extends PlainFile{
+}
+
+//Relations
+
+relation DomainRootHasMyDriveApplication{
+	.pt.ist.fenixframework.DomainRoot playsRole root {
+		multiplicity 0..1;
+	}
+	MyDrive playsRole mydrive{
+		multiplicity 0..1;
+	}
+}
+
+relation MyDriveContainsSession{
+	MyDrive playsRole mydrive;
+	Session playsRole session{
+		multiplicity *;
+	}
+}
+
+relation SessionContainsUser{
+	Session playsRole session;
+	User playsRole user{
+		multiplicity 1;
+	}
+}
+
+relation SessionContainsDir{
+	Session playsRole session;
+	Dir playsRole currentDirectory{
+		multiplicity 1;
+	}
+}
+
+relation SessionContainsEnvVar{
+	Session playsRole session;
+	EnvVar playsRole envVar{
+		multiplicity *;
+	}
+}
+
+relation MDFileContainsUser{
+	MDFile playsRole mdfile;
+	User playsRole creator{
+		multiplicity 1;
+	}
+}
+
+relation UserContainsDir{
+	User playsRole user;
+	Dir playsRole home{
+		multiplicity 1;
+	}
+}
+
+relation UserContainsMDFiles {
+	User playsRole user;
+	MDFile playsRole ownFiles{
+		multiplicity *;
+	}
+}
+
+relation DirContainsFiles {
+	Dir playsRole dir;
+	MDFile playsRole mdfile {
+		multiplicity *;
+	}
+}
+
+relation MyDriveContainsUsers {
+	MyDrive playsRole myDrive;
+	User playsRole user {
+		multiplicity *;
+	}
+}
+
+relation MyDriveContainsMDFiles {
+	MyDrive playsRole myDrive;
+	MDFile playsRole mdfile{
+		multiplicity *;
+	}
+}
